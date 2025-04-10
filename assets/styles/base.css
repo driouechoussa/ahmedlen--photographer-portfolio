@@ -1,0 +1,17 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--large-fs) !important;
+    font-weight: var(--bold) !important;
+    transform: translateY(20px) !important;
+    transition: all 1s ease !important;
+}
+
+p {
+    font-size: var(--normal-fs) !important;
+}

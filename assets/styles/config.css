@@ -1,0 +1,25 @@
+:root {
+    /*
+    Colors
+    */
+    --primary-color: rgb(255, 211, 105);
+    --dark: rgb(48, 48, 48);
+    --white: rgb(255, 255, 255);
+
+
+    /*
+    Font Sizes
+    */
+    --large-fs: 48px;
+    --normal-fs: 19px;
+ 
+
+    /*
+    Weights
+    */
+    --bold: 700;
+    --semi-bold: 600;
+    --medium: 500;
+
+
+}
