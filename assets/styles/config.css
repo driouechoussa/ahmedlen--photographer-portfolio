@@ -4,13 +4,16 @@
     */
     --primary-color: rgb(255, 211, 105);
     --dark: rgb(48, 48, 48);
+    --grey: rgb(68, 68, 68);
     --white: rgb(255, 255, 255);
+    --body : rgb(248, 249, 250);
 
 
     /*
     Font Sizes
     */
     --large-fs: 48px;
+    --medium-fs: 32px;
     --normal-fs: 19px;
  
 

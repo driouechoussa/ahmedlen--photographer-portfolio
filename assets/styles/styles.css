@@ -1,62 +1,97 @@
 @import url(base.css);
 @import url(config.css);
 
-  /* Navbar Styling */
-  .navbar {
-    background-color: var(--dark);
+/* Navbar Styling */
+.navbar {
+  background-color: var(--dark);
+}
+
+.navbar-nav .nav-link {
+  color: var(--white);
+  margin-left: 1.5rem;
+  font-weight: var(--medium);
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url('../images/bg-header.jpg') center center / cover no-repeat;
+  color: var(--white);
+  padding: 120px 20px;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.hero p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  transform: translateY(20px);
+  transition: all 1.2s ease;
+}
+
+.hero .btn {
+  font-weight: var(--semi-bold);
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: var(--primary-color);
+  color: var(--dark);
+}
+
+/* Fade-in on load */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
   }
-
-  .navbar-nav .nav-link {
-    color: var(--white);
-    margin-left: 1.5rem;
-    font-weight: var(--medium);
-    transition: color 0.3s;
-  }
-
-  .navbar-nav .nav-link:hover {
-    color: var(--primary-color);
-  }
-
-  /* Hero Section */
-  .hero {
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-                url('../images/bg-header.jpg') center center / cover no-repeat;
-    color: var(--white);
-    padding: 120px 20px;
-    text-align: center;
-    position: relative;
-  }
-
-
 
   .hero p {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    transform: translateY(20px);
-    transition: all 1.2s ease;
+    font-size: 1rem;
   }
+}
 
-  .hero .btn {
-    font-weight: var(--semi-bold);
-    transition: background-color 0.3s ease;
-  }
 
-  .hero .btn:hover {
-    background-color: var(--primary-color);
-    color: var(--dark);
-  }
+/* About Section */
 
-  /* Fade-in on load */
-  .fade-in {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
 
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2.2rem;
-    }
-    .hero p {
-      font-size: 1rem;
-    }
-  }
+.about-img {
+  border-radius: 15px;
+  transform: translateX(-30px);
+  transition: all 1s ease;
+}
+
+.about-name {
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.about-desc {
+  color: var(--grey);
+  transform: translateY(20px);
+  transition: all 1.2s ease;
+}
+
+.service-box {
+  transform: translateY(20px);
+  transition: all 1.2s ease;
+}
+
+/* Animate On Scroll (Revealed Class) */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+

@@ -3,6 +3,7 @@ body {
     user-select: none;
     margin: 0;
     padding: 0;
+    background-color: var(--body);
 }
 
 h1 {
@@ -10,6 +11,11 @@ h1 {
     font-weight: var(--bold) !important;
     transform: translateY(20px) !important;
     transition: all 1s ease !important;
+}
+
+h2 {
+    font-size: var(--medium-fs) !important;
+    font-weight: var(--bold) !important;
 }
 
 p {
