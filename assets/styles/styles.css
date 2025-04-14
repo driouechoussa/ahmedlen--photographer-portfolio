@@ -39,6 +39,7 @@
 .hero .btn {
   font-weight: var(--semi-bold);
   transition: background-color 0.3s ease;
+  border-radius: var(--b-radius);
 }
 
 .hero .btn:hover {
@@ -67,7 +68,7 @@
 
 
 .about-img {
-  border-radius: 15px;
+  border-radius: var(--b-radius);
   transform: translateX(-30px);
   transition: all 1s ease;
 }
@@ -94,6 +95,10 @@
   transform: none !important;
 }
 
+.about-service-descr {
+  color: var(--light-grey);
+}
+
 
 
 
@@ -107,7 +112,7 @@
 .gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: var(--b-radius);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -161,7 +166,7 @@
   width: 80px;
   height: 80px;
   object-fit: cover;
-  border: 3px solid #ffd369;
+  border: 3px solid var(--primary-color);
 }
 
 .review-box {
@@ -211,7 +216,7 @@
 .contact-box {
   padding: 1.5rem;
   background: var(--white);
-  border-radius: 1rem;
+  border-radius: var(--b-radius);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
@@ -239,13 +244,13 @@
 
 /* Contact Form Section */
 .contact-form-section {
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 /* Input Styling */
 .contact-form-section .form-control {
-  border-radius: 15px;
+  border-radius: var(--b-radius);
   padding: 12px 16px;
   box-shadow: none;
   transition: 0.3s ease;
@@ -260,7 +265,7 @@
 .gradient-btn {
   background-color: var(--primary-color);
   border: none;
-  border-radius: 15px;
+  border-radius: var(--b-radius);
   color: var(--white);
   font-weight: var(--medium);
   transition: background 0.3s ease;
@@ -278,7 +283,7 @@
 /* Footer Styling */
 .site-footer {
   background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-  color: #eee;
+  color: var(--white);
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -300,7 +305,7 @@
 }
 
 .footer-icon {
-  color: #ccc;
+  color: var(--white);
   font-size: var(--normal-fs);
   transition: color 0.3s ease;
   margin-left: 5px;
